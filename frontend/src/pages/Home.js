@@ -1,12 +1,10 @@
-import { useEffect} from "react";
+import { useEffect, useState } from "react";
 
 // components
 import MalwareFileDetails from "../components/MalwareFileDetails";
-import MalwareFileZipUploadForm from "../components/MalwareFileZipUploadForm";
-import { useMalwareFilesContext } from "../hooks/useMalwareFilesContext";
 
 const Home = () => {
-  const {malFiles,dispatch} = useMalwareFilesContext()
+  const [malFiles, setMalFiles] = useState(null);
 
   useEffect(() => {
     const fetchMalFiles = async () => {
@@ -14,7 +12,7 @@ const Home = () => {
       const json = await response.json();
 
       if (response.ok) {
-        dispatch({type:'SET_MALWAREFILES',payload:json})
+        setMalFiles(json);
       }
     };
 
@@ -29,7 +27,6 @@ const Home = () => {
             <MalwareFileDetails malFile={malFile} key={malFile._id} />
           ))}
       </div>
-      <MalwareFileZipUploadForm />
     </div>
   );
 };
