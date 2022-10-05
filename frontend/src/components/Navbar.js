@@ -9,7 +9,6 @@ const Navbar = () => {
   // Navigates the user to reviews/what they've written
   const queryHandler = (e) => {
     e.preventDefault()
-    console.log(queryRef.current.value);
     navigate(`search/${queryRef.current.value}`);
   };
   return (

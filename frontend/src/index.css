@@ -22,6 +22,14 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+.searchbar{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header a {
   color: #333;
   text-decoration: none;
