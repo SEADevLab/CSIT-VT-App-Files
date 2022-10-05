@@ -38,6 +38,11 @@ header a {
   grid-template-columns: 3fr 1fr;
   gap: 100px;
 }
+.searchpage {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
 .malFile-details {
   background: #fff;
   border-radius: 4px;
