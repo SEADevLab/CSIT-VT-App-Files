@@ -21,6 +21,9 @@ const Navbar = () => {
           <input type="text" ref={queryRef} placeholder="Search" />
           <button type="submit">Search</button>
         </form>
+        <Link to="/form">
+          <p>Upload Zip File</p>
+        </Link>
       </div>
     </header>
   );

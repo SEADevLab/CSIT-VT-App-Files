@@ -1,5 +1,5 @@
 /* google font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
 
 /* layout */
 :root {
@@ -22,7 +22,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-.searchbar{
+.searchbar {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px 20px;
@@ -34,7 +34,7 @@ header a {
   color: #333;
   text-decoration: none;
 }
-.pages{
+.pages {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
@@ -51,13 +51,18 @@ header a {
   grid-template-columns: 3fr 1fr;
   gap: 100px;
 }
+.formpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .malFile-details {
   background: #fff;
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 .malFile-details h4 {
   margin: 0 0 10px 0;
@@ -81,7 +86,8 @@ header a {
 }
 
 /* new workout form */
-label, input {
+label,
+input {
   display: block;
 }
 input {
