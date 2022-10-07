@@ -29,7 +29,6 @@ const Home = () => {
             <MalwareFileDetails malFile={malFile} key={malFile._id} />
           ))}
       </div>
-      <MalwareFileZipUploadForm />
     </div>
   );
 };
